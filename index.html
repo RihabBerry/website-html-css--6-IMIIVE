@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/de226e078a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>IMIIVE</title>
+  </head>
+  <body>
+    <section class="container">
+      <nav>
+        <div class="items">
+          <img src="./logo.png" class="logo" />
+          <div class="nav-links" id="navLinks">
+            <i class="far fa-window-close" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Receipe</a></li>
+            </ul>     
+          </div>      
+         
+
+        
+           </div>
+           <div class="signup">
+            <a href=""> SIGN UP</a>
+          </div>
+        </nav>
+        <div class="bars">
+        <i class="fas fa-bars" onclick ="showMenu()"></i>
+        </div>   
+    
+      <div class="content">
+        <h1>
+          Food
+          <span
+            >doesn't have <br />
+            a religion</span
+          >.It is a religion.
+        </h1>
+        <div class="explore"><a href="">Explore</a></div>
+      </div>
+
+      <div class="vertical-bar">
+        <div class="search-icon">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="social-icons">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-pinterest"></i>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
